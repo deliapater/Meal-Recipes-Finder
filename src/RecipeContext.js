@@ -19,6 +19,7 @@ export const RecipeProvider = (props) => {
       const data = await response.json();
       if (data.meals === null) {
         setError("No recipes found. Try a differenet search!");
+        setRecipes([]);
       } else {
         setRecipes(data.meals);
       }
