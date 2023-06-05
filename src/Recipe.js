@@ -3,9 +3,11 @@ import React from "react";
 function Recipe({ recipe }) {
   return (
     <div className="recipe-card">
-      <h2>{recipe.strMeal}</h2>
+      <div className="recipe-header">
+        <h2>{recipe.strMeal}</h2>
+        <img src={recipe.strMealThumb} alt={recipe.strMeal} />
+      </div>
       <p>{recipe.strInstructions}</p>
-      <img src={recipe.strMealThumb} alt={recipe.strMeal} />
     </div>
   );
 }
