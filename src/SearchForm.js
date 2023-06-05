@@ -14,7 +14,7 @@ function SearchForm() {
       />
       <button type="submit">Search</button>
     </form>
-    {error && <p>{error}</p>}
+    {error && <p className="error-message">{error}</p>}
     </div>
   );
 }
