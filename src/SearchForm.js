@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { RecipeContext } from "./RecipeContext";
+import './styles.css';
 
 function SearchForm() {
   const { search, setSearch, handleSubmit, error } = useContext(RecipeContext);

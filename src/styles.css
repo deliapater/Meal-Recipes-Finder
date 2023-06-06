@@ -10,6 +10,11 @@
     justify-content: center;
     margin-bottom: 20px;
   }
+
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
   
   input[type="text"] {
     flex: 1;
