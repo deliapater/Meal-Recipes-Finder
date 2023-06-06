@@ -6,15 +6,16 @@ function SearchForm() {
 
   return (
     <div>
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
-      <button type="submit">Search</button>
-    </form>
-    {error && <p className="error-message">{error}</p>}
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="search-input">Search for a recipe:</label>
+        <input
+          type="text"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <button type="submit">Search</button>
+      </form>
+      {error && <p className="error-message">{error}</p>}
     </div>
   );
 }

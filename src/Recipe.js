@@ -5,7 +5,7 @@ function Recipe({ recipe }) {
     <div className="recipe-card">
       <div className="recipe-header">
         <h2>{recipe.strMeal}</h2>
-        <img src={recipe.strMealThumb} alt={recipe.strMeal} />
+        <img src={recipe.strMealThumb} alt={`Recipe for ${recipe.strMeal}`} />
       </div>
       <p>{recipe.strInstructions}</p>
     </div>
